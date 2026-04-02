@@ -1,12 +1,19 @@
-## Hi there 👋
+# Laboratorio MOIX
 
-<!--
+## Proyectos
 
-**Here are some ideas to get you started:**
+* [`Lina` Máquina de tejido](https://github.com/moixlab/lina)
+* [`Nobit` Método de Registro](https://github.com/moixlab/nobit)
+* [`MOIX` Lenguaje de Programación](https://github.com/moixlab/moix)
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## Enlaces
+
+* [Página Web](https://www.moix.cc)
+* [Dashboard del Laboratorio](https://lab.moix.cc)
+* [Discuciones sobre los proyectos](https://github.com/orgs/moixlab/discussions)
+
+## Redes Sociales
+
+* [Canal de WhatsApp](https://chat.whatsapp.com/Ld7KJZH0fnD6sqFcmWJGA3)
+* [Canal de Telegram](https://t.me/moixdev)
+* [Canal de Facebook](https://www.facebook.com/moixdev/)

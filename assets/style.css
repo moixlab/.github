@@ -1,0 +1,96 @@
+:root {
+    --color-body: #EEE;
+    --color-text: #000;
+    --color-link-text: #CCC;
+    --color-link-body: #777;
+
+    --font-size: 12pt;
+    --font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link-body);
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+body {
+    color: var(--color-text);
+    background-color: var(--color-body);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    line-height: 1.6;
+
+    &>* {
+        border: 4px double;
+        border-radius: 4px;
+        box-shadow: 0 0 3px;
+        vertical-align: top;
+        margin: 1rem;
+        max-width: min(25vw, 480px);
+        display: none;
+
+        &>* {
+            padding: 0.5rem;
+        }
+
+        header {
+            color: var(--color-body);
+            background-color: var(--color-text);
+            font-variant: small-caps;
+        }
+
+        footer {
+            font-size: small;
+            color: var(--color-link-body);
+            background-color: var(--color-link-text);
+
+            span {
+                cursor: pointer;
+            }
+        }
+
+        header, footer {
+            text-align: center;
+            font-family: sans-serif;
+            font-style: italic;
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    &::first-letter {
+        padding-left: 1em;
+    }
+}
+
+sup, sub {
+    font-style: italic;
+    font-size: small;
+}
+
+sub {
+    display: block;
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.auto {
+    max-width: fit-content;
+    display: inline-block;
+}
