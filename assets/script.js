@@ -33,7 +33,7 @@ class MoixRepos extends HTMLElement {
             .filter(x => x.name != '.github')
             .map(x => {
                 return `<h3>${ x.name.toUpperCase() } <sup>${ x.language || 'Markdown' }</sup> <sub>${ x.updated_at }</sub></h3>
-                <p>${ x.description }..<a href="${ x.html_url }" target="_blank">[Visitar&raquo;]</a></p>`;
+                <p>${ x.description }..<a href="${ x.html_url }" target="_blank" aria-label="Visitar repositorio">Visitar&raquo;</a></p>`;
             });
         this.innerHTML = 
             `<header><h2>Repositorios</h2></header><article>${ reposView.join('') }</article><footer></footer>`;
@@ -43,7 +43,6 @@ class MoixRepos extends HTMLElement {
         });
         update.innerHTML = 'Actualizar';
         this.querySelector('footer').appendChild(update);
-        this.style.display = 'inline-block';
     }
 }
 

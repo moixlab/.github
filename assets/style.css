@@ -1,15 +1,15 @@
 :root {
-    --color-body: #EEE;
-    --color-text: #000;
-    --color-link-text: #CCC;
-    --color-link-body: #777;
+    --color-body: #f2f2f2;
+    --color-text: #404040;
+    --color-link-body: #8c5849;
+    --color-link-text: #c7ffef;
+    --color-header: #498c79;
 
     --font-size: 12pt;
     --font-family: monospace;
 }
 
 a {
-    text-decoration: none;
     color: var(--color-link-body);
 
     &:hover {
@@ -23,15 +23,16 @@ body {
     font-size: var(--font-size);
     font-family: var(--font-family);
     line-height: 1.6;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    align-items: start;
+    gap: 1rem;
 
     &>* {
         border: 4px double;
         border-radius: 4px;
-        box-shadow: 0 0 3px;
-        vertical-align: top;
-        margin: 1rem;
-        max-width: min(25vw, 480px);
-        display: none;
+        box-shadow: 0 0 3px var(--color-header);
+        display: block;
 
         &>* {
             padding: 0.5rem;
@@ -39,14 +40,14 @@ body {
 
         header {
             color: var(--color-body);
-            background-color: var(--color-text);
+            background-color: var(--color-header);
             font-variant: small-caps;
         }
 
         footer {
             font-size: small;
-            color: var(--color-link-body);
-            background-color: var(--color-link-text);
+            color: var(--color-link-text);
+            background-color: var(--color-text);
 
             span {
                 cursor: pointer;
@@ -60,6 +61,7 @@ body {
 
             a {
                 color: inherit;
+                text-decoration: none;
             }
         }
     }
@@ -90,7 +92,12 @@ sub {
     text-align: center;
 }
 
-.auto {
-    max-width: fit-content;
-    display: inline-block;
+@media (max-width: 480px) {
+    body {
+        display: block;
+
+        &>* {
+            margin-bottom: 1rem;
+        }
+    }
 }
