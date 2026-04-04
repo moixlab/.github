@@ -29,11 +29,6 @@ body {
     gap: 1rem;
 
     .card {
-        border: 4px double;
-        border-radius: 4px;
-        box-shadow: 0 0 3px var(--color-header);
-        display: block;
-
         &>* {
             padding: 0.5rem;
         }
