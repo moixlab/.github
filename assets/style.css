@@ -1,9 +1,9 @@
 :root {
-    --color-body: #f2f2f2;
-    --color-text: #404040;
-    --color-link-body: #8c5849;
-    --color-link-text: #c7ffef;
-    --color-header: #498c79;
+    --color-body: #F5F5DC;
+    --color-text: #2C1E1B;
+    --color-link-body: #4A5D23;
+    --color-link-text: #FFFDD0;
+    --color-header: #005C50;
 
     --font-size: 12pt;
     --font-family: monospace;
